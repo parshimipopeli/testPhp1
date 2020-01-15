@@ -211,138 +211,142 @@ ini_set("display_errors", 1);
 
 
 <?php
-//$fruit = ["pomme", "poire", "cerise", "orange", "clementine"];
-//print_r($fruit);;                        //parcourir un tableau avec la boucle for
-//for ($i = 0; $i < count($fruit); $i++) {
-//
-//    if ($i == 1) {
-//
-//
-//        echo "<p class='text-center bg-danger'>" . $fruit[$i] . "</p>";
-//        echo "<hr>";
-//        break;
-//    }
-//    echo "<p class='text-center'>" . $fruit[$i] . "</p>";
-//}
-//echo $fruit[2];
-//array_push($fruit, "fraise");
-//print_r($fruit);
-//echo "il y a " . count($fruit) . " " . "fruits dans mon tableau";
-//echo "<hr>";
-//array_push($fruit, "grenade", "pasteque", "litchee");
-//print_r($fruit);
-//
-//echo "il y a " . count($fruit) . " " . "fruits dans mon tableau";
-//echo "<hr>";
-//
-//
-//echo "<ul>";                        //parcourir un tableau avec la boucle for
-//for ($i = 0; $i < count($fruit); $i++) {
-//    echo "<li>" . $fruit[$i] . "</li>";
-//
-//}
-//echo "</ul>";
-//
-//
-//echo "<hr>"
-//
-//?>
+$fruit = ["pomme", "poire", "cerise", "orange", "clementine"];
+print_r($fruit);;                        //parcourir un tableau avec la boucle for
+for ($i = 0; $i < count($fruit); $i++) {
+
+    if ($i == 1) {
+
+
+        echo "<p class='text-center bg-danger'>" . $fruit[$i] . "</p>";
+        echo "<hr>";
+        break;
+    }
+    echo "<p class='text-center'>" . $fruit[$i] . "</p>";
+}
+echo $fruit[2];
+array_push($fruit, "fraise");
+print_r($fruit);
+echo "il y a " . count($fruit) . " " . "fruits dans mon tableau";
+echo "<hr>";
+array_push($fruit, "grenade", "pasteque", "litchee");
+print_r($fruit);
+
+echo "il y a " . count($fruit) . " " . "fruits dans mon tableau";
+echo "<hr>";
+
+
+echo "<ul>";                        //parcourir un tableau avec la boucle for
+for ($i = 0; $i < count($fruit); $i++) {
+    echo "<li>" . ($fruit)[$i] . "</li>";
+
+}
+echo "</ul>";
+sort($fruit);
+print_r($fruit);
+
+echo "<hr>";
+
+
+?>
 
 <!--<br><br><br>-->
 
 <?php
-//$tab = ["toto" => "oui",
-//    "tata" => "non"];
-//echo $tab["tata"];
-//
-//
-//?>
+$tab = ["toto" => "oui",
+    "tata" => "non"];
+echo $tab["tata"];
+
+
+?>
 
 
 <!--parcourir un tableau avec foreach-->
 <?php
-//$prenoms = ["thomas", "philippe", "bruno", "steven", "olivier"];
-//foreach ($prenoms as $element) {
-//    echo "<p class='text-center'>" . $element . "</p>";
-//}
-//echo "<br>";
-//
-//print_r($prenoms); // pour voir le tableau. Array ( [0] => thomas [1] => philippe [2] => bruno [3] => steven [4] => olivier ) non
-//echo "<br>";
-//foreach ($prenoms as $key => $val) {
-//    echo "<p class='text-center'>" . $key . "=>" . $val . "</p>";
-//}
-//echo "<hr>";
-//?>
-<!--<br>-->
+$prenoms = ["thomas", "philippe", "bruno", "steven", "olivier"];
+foreach ($prenoms as $element) {
+    echo "<p class='text-center'>" . $element . "</p>";
+}
+echo "<br>";
+
+print_r($prenoms); // pour voir le tableau. Array ( [0] => thomas [1] => philippe [2] => bruno [3] => steven [4] => olivier ) non
+echo "<br>";
+foreach ($prenoms as $key => $val) {
+    echo "<p class='text-center'>" . $key . "=>" . $val . "</p>";
+}
+echo "<hr>";
+?>
+<br>
 <?php
-//$personnage = [
-//    "nom" => "Lamorski",
-//    "prenom" => "Philippe",
-//    "adresse" => "29 residence la roseraie",
-//    "code postale" => 62122,
-//    "ville" => "Lapugnoy"
-//];
-//print_r($personnage);
-//
-//foreach ($personnage as $key => $val) {
-//    echo "<p class='text-center'>" . "<strong>" . $key . "</strong>" . "  " . "=>" . " " . $val . "</p>";
-//
-//
-//    if ($key == "prenom") {
-//        echo "<p class='text-center'>" . "<strong>" . $key . "</strong>" . "  " . "=> <span style='color: #b92458;'>" . $val . "</span>" . "</p>";
-//    }
-//}
-//echo "<hr>";
-//var_dump($personnage);
-//echo "<hr>";
-//$personnage['genre'] = "homme";
-//$personnage['age'] = 47;
-//
-//print_r($personnage);
-//var_dump($personnage);
-//echo "<hr>";
-//echo "<hr>";
-//echo "<hr>";
-//echo "<hr>";
-//
-////tableau multidimentionnel
-//
-//$eleves = [
-//    "thomas" => [
-//        "math" => 13,
-//        "francais" => 17,
-//        "anglais" => 5
-//    ],
-//    "philippe" => [
-//        "math" => 11,
-//        "francais" => 18,
-//        "anglais" => 20
-//    ],
-//    "steven" => [
-//        "math" => 12,
-//        "francais" => 18,
-//        "anglais" => 5,
-//    ],
-//    "bruno" => [
-//        "math" => 19,
-//        "francais" => 15,
-//        "anglais" => 15,
-//    ],
-//    "olivier" => [
-//        "math" => 10,
-//        "francais" => 11,
-//        "anglais" => 8,
-//    ],
-//];
-//var_dump($eleves);
-//
-//foreach ($eleves as $nom => $infos) {
-//    echo $nom . ' :<br>';
-//    foreach ($infos as $key => $val) {
-//        echo $key . ' : ' . $val . '<br>';
-//    }
-//}
+$personnage = [
+    "nom" => "Lamorski",
+    "prenom" => "Philippe",
+    "adresse" => "29 residence la roseraie",
+    "code postale" => 62122,
+    "ville" => "Lapugnoy"
+];
+print_r($personnage);
+
+foreach ($personnage as $key => $val) {
+    echo "<p class='text-center'>" . "<strong>" . $key . "</strong>" . "  " . "=>" . " " . $val . "</p>";
+
+
+    if ($key == "prenom") {
+        echo "<p class='text-center'>" . "<strong>" . $key . "</strong>" . "  " . "=> <span style='color: #b92458;'>" . $val . "</span>" . "</p>";
+    }
+}
+echo "<hr>";
+var_dump($personnage);
+echo "<hr>";
+$personnage['genre'] = "homme";
+$personnage['age'] = 47;
+
+print_r($personnage);
+var_dump($personnage);
+echo "<hr>";
+echo "<hr>";
+echo "<hr>";
+echo "<hr>";
+
+//tableau multidimentionnel
+
+$eleves = [
+    "thomas" => [
+        "math" => 13,
+        "francais" => 17,
+        "anglais" => 5
+    ],
+    "philippe" => [
+        "math" => 11,
+        "francais" => 18,
+        "anglais" => 20
+    ],
+    "steven" => [
+        "math" => 12,
+        "francais" => 18,
+        "anglais" => 5,
+    ],
+    "bruno" => [
+        "math" => 19,
+        "francais" => 15,
+        "anglais" => 15,
+    ],
+    "olivier" => [
+        "math" => 10,
+        "francais" => 11,
+        "anglais" => 8,
+    ],
+];
+var_dump($eleves);
+echo array_pop($eleves);
+
+foreach ($eleves as $nom => $infos) {
+    echo $nom . ' :<br>';
+    foreach ($infos as $key => $val) {
+        echo $key . ' : ' . $val . '<br>';
+    }
+
+}
 
 
 ?>
@@ -355,8 +359,8 @@ ini_set("display_errors", 1);
 <!---->
 <!--</form>-->
 <?php
-//
-//
+
+
 //if (isset($_POST['Enregistrer'])) {
 //
 //    if ($_POST['firstName'] == "titi") {
@@ -376,6 +380,20 @@ ini_set("display_errors", 1);
 //
 //echo $_POST['Enregistrer'];
 //};
+
+
+$firstName = valid_donnees($_POST["firstName"]);
+$lastName = valid_donnees($_POST["lastName"]);
+$numero = valid_donnees($_POST["numero"]);
+$rue = valid_donnees($_POST["rue"]);
+$city = valid_donnees($_POST["city"]);
+
+function valid_donnees($donnees){
+    $donnees = trim($donnees);
+    $donnees = stripslashes($donnees);
+    $donnees = htmlspecialchars($donnees);
+    return $donnees;
+}
 
 if (isset($_POST['envoyer'])) {
     $id = [];
@@ -402,27 +420,29 @@ if (isset($_POST['envoyer'])) {
 
         }
 
-    }
 
+    }
     echo implode("_", $id);
-var_dump($_POST);
 }
     ?>
     <form action="" method="post">
-        <input type="text" name="firstName" placeholder="Entrez vore Nom" value="<?= $firstName ?>">
-        <input type="text" name="lastName" placeholder="Entrez vore Prénom" value="<?= $lastName ?>">
-        <input type="number" name="numero" placeholder="Entrez vore n° de maison" value="<?=  $numero ?>">
-        <input type="text" name="rue" placeholder="Entrez vore rue" value="<?= $rue ?>">
-        <input type="text" name="city" placeholder="Entrez vore ville" value="<?= $city ?>">
-        <input type="number" name="cp" placeholder="Entrez votre code postal" value="<?=  $cp ?>">
-        <select name="pays" id="" selected="<?= $_POST['pays'];?>">
+        <input type="text" name="firstName" placeholder="Entrez vore Nom" value="<?php echo (isset ($firstName)) ?'firstName':''?>">
+        <input type="text" name="lastName" placeholder="Entrez vore Prénom" value="<?php echo (isset($lastName)) ?'lastName':'' ?>">
+        <input type="number" name="numero" placeholder="Entrez vore n° de maison" value="<?php echo  (isset($numero)) ?'numero':'' ?>">
+        <input type="text" name="rue" placeholder="Entrez vore rue" value="<?php echo (isset($rue)) ?'rue':'' ?>">
+        <input type="text" name="city" placeholder="Entrez vore ville" value="<?php echo (isset($city)) ?'city':'' ?>">
+        <input type="number" name="cp" placeholder="Entrez votre code postal" value="<?php echo (isset($cp)) ?'cp':'' ?>">
+        <select name="pays" id="" selected="">
             <option value="France" >France</option>
             <option value="Belgique">Belgique</option>
             <option value="Suisse">Suisse</option>
         </select>
         <button type="submit" name="envoyer">envoyer</button>
     </form>
+<?php
 
+
+?>
 
 
     <?php
