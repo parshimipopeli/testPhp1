@@ -101,4 +101,22 @@ echo $x;
 echo password_hash('philippe', PASSWORD_DEFAULT);
 echo"<hr>";
 $hash = '420$2y$10$S7BdaiPkWqalRLv6dO4ie.EHD3t1KReQnYYOWKjvO7Kb4wBctjmuO';
+echo "<HR>";
+?>
 
+<form method="POST">
+<input name="password" id="" class="btn btn-primary" type="password" value="">
+<button class="btn" type="submit">
+        envoyer <span class="badge badge-primary"></span>
+</button>
+</form>
+<?php
+$passe = $_POST['password'];
+function passHash(&$hash){
+    if (isset($_POST['password'])) {
+  return  $hash  =  PASSword_hash($passe,PASSWORD_DEFAULT);
+    }
+}
+passHash($pass);
+echo "<br>";
+echo $pass;
